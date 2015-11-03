@@ -1,0 +1,486 @@
+﻿<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		<title>中興大學典藏機構</title>
+
+		<meta charset="utf-8" />
+		<meta name="description" content="A parallax scrolling experiment using jQuery" />
+
+		<link rel="stylesheet" media="all" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="js/modernizr.custom.37797.js"></script> 
+		<!-- Grab Google CDN's jQuery. fall back to local if necessary --> 
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> 
+		<script>!window.jQuery && document.write('<script src="/js/jquery-1.6.1.min.js"><\/script>')</script>
+		<script src="js/parallax.js"></script>
+	</head>
+
+	<body>
+		<!-- <div class="page-sidebar-wrapper">
+    	<div class="page-sidebar">
+				
+				<div id="nav" class="nav"><div class="wsite-mobile-menu" style="display: block;"><div class="wsite-animation-wrap" style="position: relative;"><ul class="wsite-menu-default wsite-menu-slide" style="position: absolute; top: 0px; left: 0px; width: 100%;">
+		<li id="active" class="wsite-menu-item-wrap">
+			<a href="/" class="wsite-menu-item">
+				 Home
+			</a>
+			
+		</li>
+		<li id="pg468871158540806300" class="wsite-menu-item-wrap">
+			<a class="wsite-menu-item">
+				Our Projects
+			<span class="wsite-menu-mobile-arrow"></span></a>
+			
+
+		</li>
+		<li id="pg489820208243199236" class="wsite-menu-item-wrap">
+			<a class="wsite-menu-item">
+				About I:Eau
+			<span class="wsite-menu-mobile-arrow"></span></a>
+			
+
+		</li>
+		<li id="pg916513946767032888" class="wsite-menu-item-wrap">
+			<a class="wsite-menu-item">
+				Get Involved
+			<span class="wsite-menu-mobile-arrow"></span></a>
+			
+
+		</li>
+		<li id="pg143043842249584749" class="wsite-menu-item-wrap">
+			<a href="/donate.html" class="wsite-menu-item">
+				Donate
+			</a>
+			
+		</li>
+		<li id="pg498396259652536578" class="wsite-menu-item-wrap">
+			<a href="/news.html" class="wsite-menu-item">
+				News
+			</a>
+			
+		</li>
+</ul><div class="wsite-menu-wrap wsite-menu-slide" style="display: none; position: absolute; top: 0px; left: 0px; width: 100%;">
+	<ul class="wsite-menu"><li class="wsite-menu-back-item"><a><span class="wsite-menu-mobile-arrow"></span><span class="wsite-menu-back">Back</span></a></li><li class="wsite-menu-master-item"><a href="/our-projects.html" class="wsite-menu-item">
+				Our Projects
+			</a></li>
+		<li id="wsite-nav-144916664246751719" class="wsite-menu-subitem-wrap ">
+	<a href="/washmobile.html" class="wsite-menu-subitem">
+		<span class="wsite-menu-title">
+			WASHMobile
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-274285474276374459" class="wsite-menu-subitem-wrap ">
+	<a href="/about-burkina-faso.html" class="wsite-menu-subitem">
+		<span class="wsite-menu-title">
+			About Burkina Faso
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div><div class="wsite-menu-wrap wsite-menu-slide" style="display: none; position: absolute; top: 0px; left: 0px; width: 100%;">
+	<ul class="wsite-menu"><li class="wsite-menu-back-item"><a><span class="wsite-menu-mobile-arrow"></span><span class="wsite-menu-back">Back</span></a></li><li class="wsite-menu-master-item"><a href="/about-ieau.html" class="wsite-menu-item">
+				About I:Eau
+			</a></li>
+		<li id="wsite-nav-894436961446109737" class="wsite-menu-subitem-wrap ">
+	<a href="/our-story.html" class="wsite-menu-subitem">
+		<span class="wsite-menu-title">
+			Our Story
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-893438230345611732" class="wsite-menu-subitem-wrap ">
+	<a href="/the-team.html" class="wsite-menu-subitem">
+		<span class="wsite-menu-title">
+			The Team
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-767375786415005375" class="wsite-menu-subitem-wrap ">
+	<a href="/documentation.html" class="wsite-menu-subitem">
+		<span class="wsite-menu-title">
+			Documentation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-766238659711922731" class="wsite-menu-subitem-wrap ">
+	<a href="/contact-us.html" class="wsite-menu-subitem">
+		<span class="wsite-menu-title">
+			Contact Us
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div><div class="wsite-menu-wrap wsite-menu-slide" style="display: none; position: absolute; top: 0px; left: 0px; width: 100%;">
+	<ul class="wsite-menu"><li class="wsite-menu-back-item"><a><span class="wsite-menu-mobile-arrow"></span><span class="wsite-menu-back">Back</span></a></li><li class="wsite-menu-master-item"><a href="/get-involved.html" class="wsite-menu-item">
+				Get Involved
+			</a></li>
+		<li id="wsite-nav-431371415193594359" class="wsite-menu-subitem-wrap ">
+	<a class="wsite-menu-subitem">
+		<span class="wsite-menu-title">
+			Volunteer Positions
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	<span class="wsite-menu-mobile-arrow"></span></a>
+	
+
+</li>
+<li id="wsite-nav-781715369286344157" class="wsite-menu-subitem-wrap ">
+	<a class="wsite-menu-subitem">
+		<span class="wsite-menu-title">
+			The Running Water Series
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	<span class="wsite-menu-mobile-arrow"></span></a>
+	
+
+</li>
+<li id="wsite-nav-846393985967045002" class="wsite-menu-subitem-wrap ">
+	<a href="/live-event-coverage.html" class="wsite-menu-subitem">
+		<span class="wsite-menu-title">
+			Live Event Coverage
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div><div class="wsite-menu-wrap wsite-menu-slide" style="display: none; position: absolute; top: 0px; left: 0px; width: 100%;">
+	<ul class="wsite-menu"><li class="wsite-menu-back-item"><a><span class="wsite-menu-mobile-arrow"></span><span class="wsite-menu-back">Back</span></a></li><li class="wsite-menu-master-item"><a href="/volunteer-positions.html" class="wsite-menu-subitem">
+		<span class="wsite-menu-title">
+			Volunteer Positions
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a></li>
+		<li id="wsite-nav-656462814664370161" class="wsite-menu-subitem-wrap ">
+	<a href="/development-associate-application.html" class="wsite-menu-subitem">
+		<span class="wsite-menu-title">
+			Development Associate Application
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-710808144254064732" class="wsite-menu-subitem-wrap ">
+	<a href="/event-specialist-application.html" class="wsite-menu-subitem">
+		<span class="wsite-menu-title">
+			Event Specialist Application
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div><div class="wsite-menu-wrap wsite-menu-slide" style="display: none; position: absolute; top: 0px; left: 0px; width: 100%;">
+	<ul class="wsite-menu"><li class="wsite-menu-back-item"><a><span class="wsite-menu-mobile-arrow"></span><span class="wsite-menu-back">Back</span></a></li><li class="wsite-menu-master-item"><a href="/the-running-water-series.html" class="wsite-menu-subitem">
+		<span class="wsite-menu-title">
+			The Running Water Series
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a></li>
+		<li id="wsite-nav-738360384348174040" class="wsite-menu-subitem-wrap ">
+	<a href="/bangor-maine.html" class="wsite-menu-subitem">
+		<span class="wsite-menu-title">
+			Bangor, Maine
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div></div></div>
+</div>
+		</div>
+    </div> -->
+		<div id="page-content-wrapper">
+		<table id="branding" style="width:100%;">
+			<tbody>
+			<tr>
+			<td><img src="img/logo.png" alt="nchuLogo"></td>
+			<td valign="center" style="text-indent:40px;"><span style="font-size:300%;">中興大學典藏機構</span></td>
+			</tr>
+			</tbody>
+		</table>
+			
+			
+			<!-- <div class="wsite-mobile-menu" style="display: block;"><div class="wsite-animation-wrap" style="position: relative;"><ul class="wsite-menu-default wsite-menu-slide" style="position: absolute; top: 0px; left: 0px; width: 100%;">
+		<li id="active" class="wsite-menu-item-wrap">
+			<a href="/" class="wsite-menu-item">
+				 Home
+			</a>
+			
+		</li>
+		<li id="pg143043842249584749" class="wsite-menu-item-wrap">
+			<a href="/donate.html" class="wsite-menu-item">
+				Donate
+			</a>
+			
+		</li>
+		<li id="pg468871158540806300" class="wsite-menu-item-wrap">
+			<a class="wsite-menu-item">
+				Our Projects
+			<span class="wsite-menu-mobile-arrow"></span></a>
+			
+
+		</li>
+		<li id="pg489820208243199236" class="wsite-menu-item-wrap">
+			<a class="wsite-menu-item">
+				About I:Eau
+			<span class="wsite-menu-mobile-arrow"></span></a>
+			
+
+		</li>
+		<li id="pg916513946767032888" class="wsite-menu-item-wrap">
+			<a class="wsite-menu-item">
+				Get Involved
+			<span class="wsite-menu-mobile-arrow"></span></a>
+			
+
+		</li>
+		<li id="pg498396259652536578" class="wsite-menu-item-wrap">
+			<a href="/news.html" class="wsite-menu-item">
+				News
+			</a>
+			
+		</li>
+</ul><div class="wsite-menu-wrap wsite-menu-slide" style="display: none; position: absolute; top: 0px; left: 0px; width: 100%;">
+	<ul class="wsite-menu"><li class="wsite-menu-back-item"><a><span class="wsite-menu-mobile-arrow"></span><span class="wsite-menu-back">Back</span></a></li><li class="wsite-menu-master-item"><a href="/our-projects.html" class="wsite-menu-item">
+				Our Projects
+			</a></li>
+		<li id="wsite-nav-144916664246751719" class="wsite-menu-subitem-wrap ">
+	<a href="/washmobile.html" class="wsite-menu-subitem">
+		<span class="wsite-menu-title">
+			WASHMobile
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-274285474276374459" class="wsite-menu-subitem-wrap ">
+	<a href="/about-burkina-faso.html" class="wsite-menu-subitem">
+		<span class="wsite-menu-title">
+			About Burkina Faso
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div><div class="wsite-menu-wrap wsite-menu-slide" style="display: none; position: absolute; top: 0px; left: 0px; width: 100%;">
+	<ul class="wsite-menu"><li class="wsite-menu-back-item"><a><span class="wsite-menu-mobile-arrow"></span><span class="wsite-menu-back">Back</span></a></li><li class="wsite-menu-master-item"><a href="/about-ieau.html" class="wsite-menu-item">
+				About I:Eau
+			</a></li>
+		<li id="wsite-nav-894436961446109737" class="wsite-menu-subitem-wrap ">
+	<a href="/our-story.html" class="wsite-menu-subitem">
+		<span class="wsite-menu-title">
+			Our Story
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-893438230345611732" class="wsite-menu-subitem-wrap ">
+	<a href="/the-team.html" class="wsite-menu-subitem">
+		<span class="wsite-menu-title">
+			The Team
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-767375786415005375" class="wsite-menu-subitem-wrap ">
+	<a href="/documentation.html" class="wsite-menu-subitem">
+		<span class="wsite-menu-title">
+			Documentation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-766238659711922731" class="wsite-menu-subitem-wrap ">
+	<a href="/contact-us.html" class="wsite-menu-subitem">
+		<span class="wsite-menu-title">
+			Contact Us
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div><div class="wsite-menu-wrap wsite-menu-slide" style="display: none; position: absolute; top: 0px; left: 0px; width: 100%;">
+	<ul class="wsite-menu"><li class="wsite-menu-back-item"><a><span class="wsite-menu-mobile-arrow"></span><span class="wsite-menu-back">Back</span></a></li><li class="wsite-menu-master-item"><a href="/get-involved.html" class="wsite-menu-item">
+				Get Involved
+			</a></li>
+		<li id="wsite-nav-431371415193594359" class="wsite-menu-subitem-wrap ">
+	<a class="wsite-menu-subitem">
+		<span class="wsite-menu-title">
+			Internships and Volunteer Positions
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	<span class="wsite-menu-mobile-arrow"></span></a>
+	
+
+</li>
+<li id="wsite-nav-781715369286344157" class="wsite-menu-subitem-wrap ">
+	<a class="wsite-menu-subitem">
+		<span class="wsite-menu-title">
+			The Running Water Series
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	<span class="wsite-menu-mobile-arrow"></span></a>
+	
+
+</li>
+<li id="wsite-nav-846393985967045002" class="wsite-menu-subitem-wrap ">
+	<a href="/live-event-coverage.html" class="wsite-menu-subitem">
+		<span class="wsite-menu-title">
+			Live Event Coverage
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div><div class="wsite-menu-wrap wsite-menu-slide" style="display: none; position: absolute; top: 0px; left: 0px; width: 100%;">
+	<ul class="wsite-menu"><li class="wsite-menu-back-item"><a><span class="wsite-menu-mobile-arrow"></span><span class="wsite-menu-back">Back</span></a></li><li class="wsite-menu-master-item"><a href="/internships-and-volunteer-positions.html" class="wsite-menu-subitem">
+		<span class="wsite-menu-title">
+			Internships and Volunteer Positions
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a></li>
+		<li id="wsite-nav-656462814664370161" class="wsite-menu-subitem-wrap ">
+	<a href="/development-associate-application.html" class="wsite-menu-subitem">
+		<span class="wsite-menu-title">
+			Development Associate Application
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-710808144254064732" class="wsite-menu-subitem-wrap ">
+	<a href="/event-specialist-application.html" class="wsite-menu-subitem">
+		<span class="wsite-menu-title">
+			Event Specialist Application
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div><div class="wsite-menu-wrap wsite-menu-slide" style="display: none; position: absolute; top: 0px; left: 0px; width: 100%;">
+	<ul class="wsite-menu"><li class="wsite-menu-back-item"><a><span class="wsite-menu-mobile-arrow"></span><span class="wsite-menu-back">Back</span></a></li><li class="wsite-menu-master-item"><a href="/the-running-water-series.html" class="wsite-menu-subitem">
+		<span class="wsite-menu-title">
+			The Running Water Series
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a></li>
+		<li id="wsite-nav-738360384348174040" class="wsite-menu-subitem-wrap ">
+	<a href="/bangor-maine.html" class="wsite-menu-subitem">
+		<span class="wsite-menu-title">
+			Bangor, Maine
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div></div></div>-->
+			<nav id="primary">
+				<ul>
+					<li>
+						<h1>Hello NCHUIR!</h1>
+						<a class="firstbegin" href="#firstbegin">View</a>
+					</li>
+					<li>
+						<h1>最新消息</h1>
+						<a class="breakingnews" href="#breakingnews">View</a>
+					</li>
+					<li>
+						<h1>統計</h1>
+						<a class="statistics" href="#statistics">View</a>
+					</li>
+					<li>
+						<h1>關於</h1>
+						<a class="about" href="#about">View</a>
+					</li>
+				</ul>
+			</nav>
+			
+			<div id="content">
+				<article id="firstbegin">
+					<header>
+						<h1>Hello NCHUIR!</h1>
+					</header>
+					<div style="display:block;width:100%;height: 100%;text-indent:50px;">
+						<a href="http://ir.lib.nchu.edu.tw/"><button type="button" class="btn btn-primary btn-lg">Let's Go</button></a>
+					</div>
+					
+					<nav class="next-prev">
+						<hr/>
+						<a class="next breakingnews" href="#breakingnews">Next</a>
+					</nav>
+				</article>
+				
+				<article id="breakingnews">
+					<header>
+						<h1>最新消息</h1>
+					</header>
+					<p>這是中興大學典藏系統的新首頁喔！</p>
+					<nav class="next-prev">
+						<a class="prev firstbegin" href="#firstbegin">Prev</a>
+						<hr />
+						<a class="next statistics" href="#statistics">Next</a>
+					</nav>
+				</article>
+				
+				<article id="statistics">
+					<header>
+						<h1>這是統計</h1>
+					</header>
+					<p>這是中興大學典藏系統的資料統計</p>
+					<nav class="next-prev">
+						<a class="prev breakingnews" href="#breakingnews">Prev</a>
+						<hr />
+						<a class="next about" href="#about">Next</a>
+					</nav>
+				</article>
+				
+				<article id="about">
+					<header>
+						<h1>About</h1>
+					</header>
+					<p> 這是<a href="http://f6design.com/journal/2011/08/06/build-a-parallel-scrolling-website-interface-with-jquery-and-css/">中興大學典藏系統</a> 。</p>
+					<nav class="next-prev">
+						<a class="prev statistics" href="#statistics">Prev</a>
+						<hr />
+					</nav>
+				</article>
+			</div>
+			
+			<!-- Parallax foreground -->
+			<div id="parallax-bg3">
+				
+				<img id="bg3-2" src="img/balloon2.png" width="603" height="583" alt="Frameless parachute"/>
+				<img id="bg3-3" src="img/balloon3.png" width="446" height="713" alt="Blanchard's air balloon"/>
+				<img id="bg3-4" src="img/ground.png" width="1104" height="684" alt="Landscape with trees and cows"/>
+			</div>
+			
+			<!-- Parallax  midground clouds -->
+			<div id="parallax-bg2">
+				<img id="bg2-1" src="img/cloud-lg1.png" alt="cloud"/>
+				<img id="bg2-2" src="img/cloud-lg1.png" alt="cloud"/>
+				<img id="bg2-3" src="img/cloud-lg1.png" alt="cloud"/>
+				<img id="bg2-4" src="img/cloud-lg1.png" alt="cloud"/>
+				<img id="bg2-5" src="img/cloud-lg1.png" alt="cloud"/>
+			</div>
+			
+			<!-- Parallax  background clouds -->
+			<div id="parallax-bg1">
+				<img id="bg1-1" src="img/cloud-lg2.png" alt="cloud"/>
+				<img id="bg1-2" src="img/cloud-lg2.png" alt="cloud"/>
+				<img id="bg1-3" src="img/cloud-lg2.png" alt="cloud"/>
+				<img id="bg1-4" src="img/cloud-lg2.png" alt="cloud"/>
+			</div>
+		
+		</div>
+	
+	</body>
+  
+</html>
