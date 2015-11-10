@@ -8,6 +8,8 @@
    http://meyerweb.com/eric/tools/css/reset/ 
 *****************************************************************/
 
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,19 +23,28 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
+
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
+	font-family: 'cwTeXFangSong', serif;
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
+main {
+    flex: 1 0 auto;
+  }
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 	line-height: 1;
 }
 ol, ul {
@@ -51,6 +62,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+  
 
 /* Extended base styles (site specific)
 *****************************************************************/
@@ -59,9 +71,7 @@ html {
 	overflow-y: scroll; /* always force a scrollbar in non-IE */
 	}
 body {
-	background: #e3e5e5;
-	overflow-x: hidden;
-	height: 4550px;
+	overflow-x: scrollbar;
 	line-height: 1.5;
 	color: #000;
 	font-size: 14px;
@@ -82,9 +92,7 @@ a:visited {
 	outline: none;
 	text-decoration:none;
 	}
-	a:hover { 
-		color:#000;
-		}
+
 img { 
 	display:block;
 	}
@@ -107,58 +115,85 @@ hr {
 /* Page structure
 *****************************************************************/
 
-#page-content-wrapper {
-	position: relative;
-}
+
 #branding {
 	width: 100%;
-	background: #000;
+	background: #fff;
 	}
-	#branding h1 {
-		width: 940px;
-		padding: 10px 15px;
-		margin: 0 auto;
-		text-transform: uppercase;
-		font-size: 18px;
-		font-weight: bold;
-		}
-
+	#branding img {
+		padding-top: 20px;
+		padding-left: 50px;
+	}
+	#branding span {
+		float: left;
+		padding-top: 20px;
+		font-size:180%;2
+	}
+	#branding ul {
+		font-weight: lighter;
+		float: left;
+		font-size: 100%;
+		font-family:;	
+		text-align: center;
+	}
+	#branding li{
+		display:inline;
+		top:8px;
+		margin-left: 100px;
+	}
+	#branding a{
+		height: 39px;
+		max-width: 131px;
+		line-height:39px;
+		color: #fff;
+			}
+	#branding ul span{
+				margin-right:10px;
+				padding-top: 0px;
+	}
 /* Nav
 *****************************************************************/
 
 nav#primary {
-	z-index: 5;
-	position: fixed;
+	z-index: 5 ;
+	position: fixed ;
+	width: 0;
 	top: 50%;
-	right: 16px;
+	right: 50px ;
 	margin-top: -40px;
+	background: transparent;
+	box-shadow: none;
+
 }
 nav#primary li {
 	position: relative;
 	height: 20px;
+	float: none;
 }
 nav#primary a {
 	display: block;
 	width: 20px;
 	height: 20px;
 	text-indent: -9999px;
-	background: transparent url('../img/nav-dot.png') 4px 4px no-repeat;
+	background: transparent url('../img/nav-dot.png') 8px 4px no-repeat !important;
 }
 nav#primary a:hover, nav#primary a.active {
-	background: transparent url('../img/nav-dot.png') 4px -16px no-repeat;
+	background: transparent url('../img/nav-dot.png') 4px -16px no-repeat !important;
 }
 nav#primary h1 {
 	position: absolute;
 	right: 22px;
-	top: -7px;
+	top: -35px;
 	display: none;
 	padding: 4px 20px 4px 7px;;
-	color: #fff;
+	color: #fff !important;
 	white-space: nowrap;
 	background: transparent url('../img/nav-arrow.png') 100% 50% no-repeat;
 	}
 nav.next-prev {
-	margin: 20px 0 0 0;
+	margin: 200px 0 0 0;
+	background-color: transparent;
+	box-shadow: none;
 	}
 	a.prev,
 	a.next {
@@ -226,40 +261,6 @@ nav.next-prev {
 			position: absolute;
 			top: 3270px;
 			}
-		header {
-			margin: 0 auto;
-		}
-		
-/* foreground (ballons/landscape) */
-#parallax-bg3 {
-	z-index: 3;
-	position: fixed;
-	left: 50%; /* align left edge with center of viewport */
-	top: 0;
-	width: 940px;
-	margin-left: -470px; /* move left by half element's width */
-	}
-	/* balloon */
-	#bg3-1 {
-		position: absolute;
-		top: -111px;
-		left: 355px;
-		}
-	#bg3-2 {
-		position: absolute;
-		top: 812px;
-		left: 321px;
-		}
-	#bg3-3 {
-		position: absolute;
-		top: 1628px;
-		left: 403px;
-		}
-	#bg3-4 {
-		position: absolute;
-		top: 2700px;
-		left: -85px;
-		}
 /* midground (clouds) */
 #parallax-bg2 {
 	z-index: 2;
@@ -323,4 +324,7 @@ nav.next-prev {
 		top: 1020px;
 		left: 450px;
 		}
+	footer{
+
+	}
 
