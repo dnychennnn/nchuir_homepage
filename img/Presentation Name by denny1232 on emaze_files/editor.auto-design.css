@@ -1,0 +1,61 @@
+#save-layouts-btn {
+border: 0;
+color: white;
+font-family: 'emaze-font', sans-serif, Arial, Helvetica;
+top: 0;
+position: absolute !important;
+left: -200px;
+}
+
+#save-autodesign-btn{
+border: 0;
+color: white;
+font-family: 'emaze-font', sans-serif, Arial, Helvetica;
+top: 0;
+position: absolute !important;
+left: -100px;
+}
+
+
+#btn-placeholder, #btn-multi-placeholder-add, #btn-multi-placeholder-remove{ 
+    color:red;
+}
+
+#btn-background { 
+    color:orange;
+}
+
+#btn-caption, #btn-remove-caption { 
+    color:yellow;
+}
+
+
+[data-auto-placeholder].edit-wrapper {
+   outline:2px solid red;
+}
+
+[data-auto-background] > .sd-element-image {
+   outline:8px inset orange;
+}
+
+[data-auto-caption] > .sd-element-text, [data-auto-caption] > .sd-element-image {
+   outline:8px inset yellow;
+}
+
+#save-layouts-btn.loading, #save-layouts-btn.loading:hover {
+background-image: url(../../vbcommon/images/loading.gif) !important;
+background-size: 30px !important;
+background-position: center 10px !important;
+}
+
+#wizardForm{
+    position: absolute;
+    width: 865px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    margin-left: -432px;
+    margin-top: -300px;
+    z-index: 999999;
+    border: none;
+}

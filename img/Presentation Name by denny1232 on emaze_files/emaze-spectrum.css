@@ -1,0 +1,149 @@
+/***
+Spectrum Colorpicker customization
+***/
+
+.emaze-spectrum.sp-container {
+border:0;
+}
+.emaze-spectrum.sp-replacer {
+    border: 0;
+    width:30px;
+    height:30px;
+    padding: 0px;
+    background: transparent;
+}
+
+.emaze-spectrum .sp-dd{
+    display:none;
+}
+
+.emaze-spectrum .sp-top{
+  margin-bottom:8px;
+}
+
+.emaze-spectrum .sp-preview {
+
+}
+
+.emaze-spectrum .sp-preview{
+    width:inherit;
+    height:inherit;
+    border-style:solid;
+    box-sizing:border-box;
+}
+
+.emaze-spectrum .sp-picker-container,
+.emaze-spectrum .sp-palette-container{
+    background-color:rgb(28,32,35);
+ }
+
+.emaze-spectrum .sp-palette-container{
+  padding:17px 17px 300px 19px;
+  border-right:none;
+ 
+}
+
+.emaze-spectrum .sp-picker-container{
+  border-left:none;
+  padding:17px 17px 300px 0;
+   overflow:visible;
+}
+
+.emaze-spectrum .sp-cancel,
+.emaze-spectrum button.sp-choose{
+margin: 0;
+height:28px;
+width:82px;
+border:0;
+border-radius:0;
+margin:2px;
+display:inline-block;
+box-sizing:border-box;
+background-image:none;
+text-shadow:none;
+font-size:16px;
+font-family:gobold;
+line-height: 0.8 !important;
+text-shadow:none;
+}
+
+.emaze-spectrum .sp-cancel:hover,
+.emaze-spectrum .sp-choose:hover{
+background: #ff7f0b;
+text-decoration:none;
+border:0;
+}
+
+ .emaze-spectrum .sp-cancel{
+padding:8px;
+background: #e5e5e5;
+color:#737374 !important;
+position:relative;
+left: -160px;
+text-align:center;
+line-height:100%;
+ }
+
+  .emaze-spectrum .sp-choose{
+     background: #ffb106;
+     padding:8px;
+     color:black;
+ }
+
+
+.emaze-spectrum .sp-input-container{
+   font-style:italic;
+    font-family:asap;
+    margin-bottom:20px;
+}
+
+.emaze-spectrum .sp-input{
+    color:#cdcdcd;
+    border-color:#cdcdcd;
+    border-radius:0;
+    border-style:solid;
+    font-size:13px;
+   
+    width:66px;
+    height:22px;
+    box-sizing:border-box;    
+}
+
+.emaze-spectrum .sp-input-container:before{
+  content:'ColorCode';
+  color:#cdcdcd;
+  font-size:14px;
+  display:inline-block;
+  margin-right:5px;
+}
+
+/*
+.emaze-spectrum .sp-dragger{
+background-color:transparent;
+width:15px;
+height:15px;
+border-radius:20px;
+border-width:2px;
+
+}
+*/
+
+.emaze-spectrum .sp-slider{
+height:5px;
+border-color:transparent;
+box-sizing:border-box;
+}
+
+
+
+.emaze-spectrum  .sp-palette .sp-thumb-el{
+  border:0;
+}
+
+.emaze-spectrum .sp-palette .sp-thumb-el {
+    margin:1px;
+}
+
+.emaze-spectrum  .sp-color, .emaze-spectrum .sp-dragger {
+    cursor: url(../images/color-picker-wheel.cur), url(../images/color-picker-wheel.png), auto;
+}

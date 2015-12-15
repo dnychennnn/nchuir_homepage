@@ -1,0 +1,730 @@
+﻿@font-face { font-family: 'Asap'; font-style: normal;font-weight: 400;src: local('Asap'), local('Asap-Regular'), url(https://fonts.gstatic.com/s/asap/v3/oiVlPAjaPL0EznW3E5Z2DQ.woff2) format('woff2'), url(https://fonts.gstatic.com/s/asap/v3/SgBaq0dzhSGNMfqm2JX5ng.woff) format('woff');}
+@font-face { font-family: 'gobold-thin'; font-style: normal; font-weight: 400; src: local('GoBold-Regular'), url(//resources.emazestaging.com/emaze-fonts/fonts/gobold-thin.eot); src: url(//resources.emazestaging.com/emaze-fonts/fonts/gobold-thin.woff2) format('woff2'), url(//resources.emazestaging.com/emaze-fonts/fonts/gobold-thin.woff) format('woff'), url(//resources.emazestaging.com/emaze-fonts/fonts/gobold-thin.ttf)  format('truetype'); }
+@font-face { font-family: 'Gobold'; font-style: normal; font-weight: 400; src: local('Gobold'), url(//resources.emaze.com/emaze-fonts/fonts/Gobold.eot); src: url(//resources.emaze.com/emaze-fonts/fonts/Gobold.woff2) format('woff2'), url(//resources.emaze.com/emaze-fonts/fonts/Gobold.woff) format('woff'), url(//resources.emaze.com/emaze-fonts/fonts/Gobold.ttf)  format('truetype'); }
+
+#pp2-ss-select-box {
+font-family: 'Asap';
+    font-family: 'Asap';
+    font-size: 17px;
+    color: #333333;
+    position: absolute;
+    background-color: #f1f0ee;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dbd7ce;
+    width: 191px;
+    height: 33px;
+    top: 14px;
+    left: 186px;
+}
+
+#pp2-ss-select-box-text {
+    left: 10px;
+    top: -7px;
+    position: absolute;
+}
+
+#pp2-ss-select-box-arrow {
+    right: 7px;
+    position: absolute;
+    width: 16px;
+    height: 11px;
+    top: 10px;
+    background-image: url(../images/pp2-ss-dropdown_arrow_open_menu.png);
+}
+
+#pp2-ss-select-box-arrow:hover {
+    background-image: url(../images/pp2-ss-dropdown_arrow_open_menu_hover.png);
+}
+
+.pp2-ss-select-box-arrow-down {
+    background-image: url(../images/pp2-ss-dropdown_arrow.png) !important;
+}
+
+.pp2-ss-select-box-arrow-down:hover {
+    background-image: url(../images/pp2-ss-dropdown_arrow_hover.png) !important;
+}
+
+#pp2-ss-select-box-options {
+    display: none;
+    position: absolute;
+    top: 48px;
+    left: 186px;
+    background-color: white;
+    width: 191px;
+    height: 60px;
+    border-style: solid;
+    border-color: #8f8f8f;
+    border-width: 1px;
+    font-family: 'Asap';
+    font-size: 17px;
+    color: #333333;
+    z-index: 20;
+}
+
+.pp2-ss-select-box-option {
+    position: absolute;
+    left: 6px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.pp2-ss-select-box-option:hover {
+    color: #ad2066;
+}
+
+#pp2-ss-select-box-orig {
+    position: absolute;
+    top: -6px;
+}
+
+#pp2-ss-select-box-emaze {
+    position: absolute;
+    top: 20px;
+}
+
+.pp2-ss-slide-selector {    
+    cursor: pointer;
+    position: absolute;
+    left: 240px;
+    top: 122px;
+    width: 32px;
+    height: 32px;
+    background-image: url(../images/pp2-ss-slide-add.png);
+    z-index: 10;    
+    background-repeat: no-repeat;
+}
+
+.pp2-ss-slide-selector:hover {
+    background-image: url(../images/pp2-ss-slide-add-hover.png);    
+}
+
+.pp2-ss-slide-selected {
+    background-image: url(../images/pp2-ss-slide-selected.png);    
+}
+
+.pp2-ss-slide-options {
+    background-image: url(../images/pp2-ss-slide-options.png) !important;
+}
+
+.pp2-ss-slide-selected:hover {
+    background-image: url(../images/pp2-ss-slide-selected-hover.png);    
+}
+
+.pp2-ss-slide-background-dummy {
+    height: 100%;
+    width: 100%;
+    -webkit-transform: scale(1) !important;
+    -moz-transform: scale(1) !important;
+    -ms-transform: scale(1) !important;
+    -o-transform: scale(1) !important;
+    transform: scale(1) !important;
+    /*z-index: -2;*/
+    position: absolute !important;
+}
+
+#pp2-ss-white-mask {
+        top: 80px;
+    width: 100%;
+    bottom: 0;
+    background-color: white;    
+    z-index: 20;
+    position: absolute;
+    opacity: 0.7;
+    overflow: hidden;
+    display: none;
+}
+
+#pp2-ss-continue-button {
+    color: white;
+    background-color: #ad2065;
+    top: 25px;
+    right: 45px;
+    position: absolute;
+    font-family: 'Gobold';
+    font-size: 22px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    transition: 0.2s;    
+    width: 80px;
+    height: 30px;
+}
+
+#pp2-ss-continue-button:hover {
+    font-size: 25px;
+    padding-left: 13px;
+    padding-right: 23px;
+    padding-top: 4px;
+    padding-bottom: 6px;
+}
+
+.pp2-ss-continue-saving {
+    background-color: #C791AC !important;
+    padding-right: 48px !important;
+    background-image: url(../../vbcommon/images/loading.gif) !important;
+    background-size: 30px !important;
+    background-position: 88px 4px !important;
+    background-repeat: no-repeat !important;
+
+}
+
+#pp2-ss-select-all-text {
+    position: absolute;
+    left: 80px;
+    top: 32px;
+    font-family: 'Asap';
+    font-size: 18px;
+    color: #333333;
+    cursor: pointer;
+}
+
+#pp2-ss-select-all-button {
+    position: absolute;
+    left: 45px;
+    top: 30px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    background-image: url(../images/pp2-ss-select-all.png);
+}
+
+#pp2-ss-select-all-button:hover {
+    background-image: url(../images/pp2-ss-select-all-hover.png);
+}
+
+.pp2-ss-unselect-all {
+    background-image: url(../images/pp2-ss-unselect-all.png) !important;
+}
+
+.pp2-ss-unselect-all:hover {
+    background-image: url(../images/pp2-ss-unselect-all-hover.png) !important;
+}
+
+#pp2-ss-slide-options-close {
+    background-image: url(../images/pp2-ss-close-options.png);
+    margin-left: 849px;
+    margin-top: 2px;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    cursor: pointer;
+}
+
+#pp2-ss-top-text {
+    margin-left: 48px;
+    font-family: Asap;
+    font-weight: bold;
+    font-size: 19px;
+    color: #333333;
+    margin-top: 7px;
+}
+
+#pp2-ss-bottom-panel {
+    height: 85px;
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+}
+
+#pp2-ss-slide-panel {
+    left: 45px;
+    width: 915px;
+    bottom: 80px;
+    top: 142px;
+    position: absolute;    
+    overflow-y: auto;
+}
+
+.pp2-ss-slide-wrapper {
+        width: 272px;
+    height: 153px;
+    margin-bottom: 13px;
+    margin-right: 24px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-style: solid;
+    border-color: #8f8f8f;
+    border-width: 1px;
+}
+
+.pp2-ss-slide-wrapper>.slide {
+    transform: scale(0.15);
+    transform-origin: 0 0 0;
+}
+
+.pp2-ss-slide-mask {
+    width: 272px;
+    height: 153px;
+    z-index: 8;
+    position: absolute;    
+}
+
+.pp2-ss-slide-mask-hover {
+    background-image: url(../images/pp2-ss-option-gradient.png);
+    border-color: #ad2066;
+    border-style: solid;
+    border-width: 1px;
+    width: 268px;
+    height: 149px;
+}
+
+
+.pp2-ss-separator {
+    height: 26px;
+    width: 2px;
+    color: #333333;
+}
+
+.pp2-ss-panel-slide-options {
+      width: 870px;
+    min-height: 153px;
+    background-image: url(../images/pp2-ss-options-pattern.png);
+}
+
+.pp2-ss-button-selected,.pp2-ss-button:hover {
+    color: white !important;
+    background-color: #ad2065;
+    height: 100%;
+    display: inline-block;
+}
+
+#pp2-ss-top-panel {
+    top: 80px;
+    position: absolute;
+    width: 100%;
+    height: 46px;
+    font-size: 15px;    
+    line-height: 45px;
+}
+
+.pp2-ss-left-arrow {
+    background-image: url(../images/pp2-ss-arrow-left.png);
+    cursor: not-allowed;
+}
+
+.pp2-ss-left-arrow:hover {
+    background-image: url(../images/pp2-ss-arrow-left-hover.png);
+}
+
+.pp2-ss-right-arrow {
+    background-image: url(../images/pp2-ss-arrow-right.png);
+    right: 0px;    
+}
+
+.pp2-ss-right-arrow:hover {
+    background-image: url(../images/pp2-ss-arrow-right-hover.png);
+    right: 0px;
+}
+
+.pp2-ss-arrow {
+    width: 29px;
+    height: 28px;
+    top: 63px;
+    z-index: 19;
+    position: absolute;
+    display: none;  
+}
+
+.pp2-ss-option-num {
+    z-index: 19;
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    color: white;
+    display: none;
+    font-family: Asap;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.pp2-dialog {
+    display: none;
+    position: fixed;
+    width: 960px;
+    left: 50%;
+    top: 50px;
+    bottom: 50px;
+    margin-left: -480px;
+    background-color: white;
+    z-index: 1000000;   
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+#pp2-ss-dialog {
+    /*display: block;*/
+}
+
+.pp2-close {
+    background-image: url('../../vbplayer/images/close-popup-2014.png');
+    background-repeat: no-repeat;
+    background-size: 19px;
+    position: absolute;
+    z-index: 100;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    cursor: pointer;
+    margin-top: 11px;
+    margin-right: 11px;
+}
+
+.pp2-header-text {
+        margin-top: 20px;
+}
+    
+.pp2-header {
+    position: absolute;
+    text-align: center;
+    height: 80px;
+    color: #efefef;
+    background: url('../../vbplayer/images/dot-pattern-popup-2014.png'), black;
+    font: normal 32px 'gobold', sans-serif, Arial, Helvetica;
+    text-transform: uppercase;
+    border-bottom: 1px white solid;
+    width: 100%;
+}
+
+#pp2-pb-message {
+    position: absolute;
+    top: 230px;
+    font: normal 26px 'Asap', sans-serif, Arial, Helvetica;
+    text-align: center;
+    width: 100%;
+    height: 26px;
+    color: #333333;
+}
+
+#pp2-pb-bar {
+    position: absolute;
+    top: 270px;
+    left: 205px;
+    width: 554px;
+    height: 43px;
+    background-image: url(../images/pp2-bar-bg.png);
+}
+
+#pp2-pb-bar-fg {
+    background-image: url(../images/pp2-bar-fg.jpg);
+    height: 100%;
+    width: 40%;
+}
+
+#pp2-pb-pic {
+    background-image: url(../images/pp2-pb-pic.gif);
+    top: 400px;
+    left: 0px;
+    height: 220px;
+    width: 960px;
+    position: absolute;
+}
+
+
+#pp-slides-list .slide-wrapper .slide {
+overflow: hidden;
+-moz-transform: scale(0.156);
+-ms-transform: scale(0.156);
+-o-transform: scale(0.156);
+-webkit-transform: scale(0.156);
+transform: scale(0.156);
+-moz-transform-origin: 0 0 0;
+-ms-transform-origin: 0 0 0;
+-o-transform-origin: 0 0 0;
+-webkit-transform-origin: 0 0 0;
+transform-origin: 0 0 0;    
+}
+
+#pp-slides-list .slide-wrapper:hover {
+    border-style: solid;
+    border-color: #f39348;
+    border-width: 2px;
+    width: 176px;
+    height: 97px;
+}
+
+
+#pp-selectSlides {
+    width: 812px;
+    height: 490px;
+    background-color: #222222;
+    display: none;
+    z-index: 100000;
+    margin: -210px 0 0 -350px;    
+}
+
+#pp-slides-list .slide-wrapper {
+    width: 180px;
+    height: 101px;
+    margin: 3px;
+    margin-right: 6px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.pp-button-select {
+    font: normal 17px 'emazec-font', sans-serif, Arial, Helvetica;
+    color:#eeeeee; 
+    background-color: #838383;
+    position: absolute;    
+    top: 28px;
+    line-height: 28px;
+    text-align: center;
+    cursor: pointer;
+    height: 28px;
+}
+
+.pp-button-select:hover {
+        background-color:#c94b50;
+    }
+
+#pp-button-selectAll {
+    right: 172px;
+    width: 100px;
+}
+
+#pp-button-unselectAll {
+    right: 44px;
+    width: 123px;
+}
+
+#pp-insertSlides-close-button {
+    right: -16px;
+    top: -18px;
+}
+
+#pp-insertSlides-button {
+    height: 34px;
+    width: 132px;
+    font: normal 23px 'emazec-font', sans-serif, Arial, Helvetica;
+    bottom: 25px;
+    right: 22px;
+}
+
+#pp-insertSlides-cancel-button {
+    height: 34px;
+    width: 132px;
+    font: normal 23px 'emazec-font', sans-serif, Arial, Helvetica;
+    left: 23px;
+    bottom: 25px;
+}
+
+#pp-slides-list {    
+    margin-top: 45px;
+    height: 324px;
+    width: 773px; /* for explorer */
+    margin-left: 20px;
+    overflow-y: scroll;    
+}
+
+.pp-slide-selector,.pp-slide-selector-2,.pp-slide-selector-3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1000;
+    background-image: url(../images/pp-checkBox_checked.png);
+    background-repeat: no-repeat;
+    background-position: 150px 73px;
+}
+
+.pp-slide-selector-2 {
+       background-image: url(../images/pp-checkBox_checked-2.png);
+}
+
+.pp-slide-selector-3 {
+       background-image: url(../images/pp-checkBox_checked-3.png);
+}
+
+
+.ppSlideCheckbox {
+    left: 104px;
+    top: 52px;
+    position: absolute;
+}
+
+#importing-message-powerpoint {
+    font-size: 14px; position: absolute; top: 150px; left: 150px;
+}
+
+.ppProgress {
+    position: absolute;
+    width: 345px;
+    height: 9px;
+    top: 120px;
+    left: 70px;
+    max-width: 345px;
+    border-radius: 3px;
+}
+
+.ppProgressFore {
+    background: #cc4c51;
+    
+} 
+
+.ppProgressBack {
+    background: #818181;
+}
+
+#pp-step1-image {
+    position: absolute;
+    height: 57px;
+    width: 232px;
+    left: 381px;
+    top: 120px;    
+}
+
+#powerpoint-menu-button {    
+    float: right;
+    margin-right: 4px;
+    background-size: 19px, 200%;
+    background-repeat: no-repeat;
+    background-image: url('../images/pp-icon3.png'), linear-gradient(to right, #e02623, #e02623 50%, rgb(81, 81, 81) 50%, rgb(81, 81, 81));
+    background-image: url('../images/pp-icon3.png'), -webkit-linear-gradient(left, #e02623, #e02623 50%, rgb(81, 81, 81) 50%, rgb(81, 81, 81));    
+    min-width: 40px;
+    background-position: 11px 7px, -40px;
+}
+
+#powerpoint-menu-button:hover {
+    background-position: 11px 7px, 0px;
+}
+
+#powerpoint-progress-popup {
+    display: none;
+    z-index: 100000;
+    /*for debugging*/
+    top: 433px; 
+    left: 1055px;
+ }
+
+#powerpoint-autodesign-progress-popup {
+    display: none;
+    z-index: 100000;
+ }
+
+.powerpoint-popup-header {
+    max-width: 100%;
+    height: 25px;
+    color: white;
+    display: block;
+    font: normal 26px 'Asap', sans-serif, Arial, Helvetica;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 12px;
+    padding-left: 5px;
+    border-bottom: 1px white solid;
+}
+
+#powerpoint-popup 
+{
+    margin: -150px 0 0 -490px;
+    width: 995px;
+    height: 260px;
+    background-color: #edecec;
+    /*opacity: 0.94;*/
+    /*The opacity here just disturbs*/ 
+    opacity: 1; 
+    display: none;
+}
+
+#pp-templates 
+{
+    margin: -268px 0 0 -490px;
+    width: 1000px;
+    height: 537px;
+    background-color: #edecec;
+    opacity: 0.94;
+    display: none;
+}
+
+#pp-template-list {
+    position: absolute;
+    top: 120px;
+    width: 980px;
+    height: 404px;
+    overflow-x: hidden;
+    left: 20px;
+    -webkit-perspective: 3000px;
+    -moz-perspective: 3000px;
+    -o-perspective: 3000px;
+	perspective: 3000px;
+}
+
+#fileSelector {
+    position: absolute;
+    overflow: hidden;
+    opacity: 0;    
+    height: 40px;
+    top: 0;    
+    left: 0;
+    font-size: 150px;
+    width: 145px;
+    cursor: pointer;
+}
+
+#powerpoint-close, #pp-close {
+    background-image: url("../images/pp_closebtn.png");
+    margin-top: 15px;
+    margin-right: 7px;
+}
+
+#powerpoint-autodesign-progress-close {
+  background-image: url(../../vbcommon/images/popup-close-icon.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 100;
+  width: 20px;
+  height: 20px;
+  right: 0;
+  cursor: pointer;
+  margin-left: 15px;
+  margin-top: 28px;
+  margin-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 12px;
+  padding-left: 5px;
+}
+
+.powerpoint-popup-message {
+    max-width: 100%;
+  height: 25px;
+  display: block;
+  font: normal 18px 'Asap', sans-serif, Arial, Helvetica;  
+  margin-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+#pp-mask-editor {
+    width: 100%;
+    height: 100%;    
+    display: none;
+    position: absolute;
+    /*added for auto-design*/
+    z-index: 100000;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.pp-mask-editor-auto-design {
+    background-color: rgb(50,50,50) !important;    
+}
+
+.unchecked {
+    background-image: url(../images/pp-checkBox_unchecked.png);
+}
+
+.unchecked-2 {
+    background-image: url(../images/pp-checkBox_unchecked-2.png);
+}
+
+.unchecked-3 {
+    background-image: url(../images/pp-checkBox_unchecked-3.png);
+}

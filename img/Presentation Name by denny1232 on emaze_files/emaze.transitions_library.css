@@ -1,0 +1,15 @@
+.tl-perspective-800{
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -ms-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+}
+
+.tl-perspective-1600{
+    -webkit-perspective: 1600px;
+    -moz-perspective: 1600px;
+    -ms-perspective: 1600px;
+    -o-perspective: 1600px;
+    perspective: 1600px;
+}

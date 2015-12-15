@@ -1,0 +1,92 @@
+.em-dialog-mask 
+{
+position: absolute;
+top:0;
+left:0;
+bottom:0;
+right:0;
+background:rgba(0,0,0,0.6)
+;
+z-index: 10000000000;
+}
+
+.em-dialog {
+display:inline-block;
+position:absolute;
+top:50%;
+margin-top:-167px;
+left:50%;
+margin-left:-250px;
+width: 500px;
+color: white;
+height: 334px;
+background: white;
+z-index: 10000;
+color: black;
+background-repeat: no-repeat;
+}
+
+.em-dialog-header {
+max-width: 100%;
+height: 80px;
+color: #efefef;
+background: url(../images/black-dot.jpg), black;
+display: block;
+font: normal 32px 'gobold', sans-serif, Arial, Helvetica;
+text-transform: uppercase;
+text-align:center;
+padding:20px;
+box-sizing:border-box;
+}
+
+.em-dialog-message {
+max-width: 100%;
+height: 25px;
+display: block;
+font: normal 20px 'asap', sans-serif, Arial, Helvetica;
+margin-top: 20px;
+padding-bottom: 15px;
+padding-left: 20px;
+padding-right: 20px;
+}
+
+.em-dialog-btn-cancel {
+ left:24px;
+ background-color:#888;
+}
+
+.em-dialog-btn{
+font: normal 21px 'gobold', sans-serif, Arial, Helvetica;   
+border: 0;
+cursor: pointer;
+text-transform: uppercase;
+position:absolute;
+bottom:24px;
+width:135px;
+height:50px;
+}
+
+.em-dialog-btn-ok {
+background-color: #f5b01b;
+right:24px;
+}
+
+.em-dialog-btn:hover {
+  background-color: #ec7f00;
+}
+
+.em-dialog-close {
+background-image: url(../images/close-dialog.png);
+background-repeat: no-repeat;
+background-size: 19px;
+position: absolute;
+z-index: 100;
+width: 20px;
+height: 20px;
+right: 0;
+cursor: pointer;
+margin-top: 11px;
+margin-right: 11px;
+background-color: transparent;
+border: 0;
+}

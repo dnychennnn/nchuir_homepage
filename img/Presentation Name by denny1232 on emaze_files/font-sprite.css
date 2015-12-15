@@ -1,0 +1,157 @@
+/*
+    generated using http://spritegen.website-performance.org/
+    using default settings + 
+    1.'Class Prefix (optional):'  set to empty
+    2. 'Compress Image with OptiPNG:'  checked
+    */
+/*font sprites*/
+.selected .font-sprite:hover,
+.font-sprite { 
+background-image: url(font-sprite.png);
+display: inline-block;
+}
+
+
+
+.font-sprite:hover{
+   background-image: url(font-sprite_hover.png); 
+}
+
+body:after
+{  /*pre-load hover image*/
+content: url(font-sprite_hover.png); 
+display: none;
+}
+
+
+.Actor { width: 180px; height: 27px; background-position: -5px -5px; }
+.Anton { width: 180px; height: 27px; background-position: -195px -5px; }
+.Archivo-Narrow { width: 180px; height: 27px; background-position: -385px -5px; }
+.Archivo-Narrow-Bold { width: 180px; height: 27px; background-position: -575px -5px; }
+.Bitter { width: 180px; height: 27px; background-position: -765px -5px; }
+.Bitter-Bold { width: 180px; height: 27px; background-position: -5px -42px; }
+.Comfortaa { width: 180px; height: 27px; background-position: -195px -42px; }
+.Dosis { width: 180px; height: 27px; background-position: -385px -42px; }
+.Dosis-Medium { width: 180px; height: 27px; background-position: -575px -42px; }
+.Dosis-SemiBold { width: 180px; height: 27px; background-position: -765px -42px; }
+.EBGaramond { width: 180px; height: 27px; background-position: -5px -79px; }
+.Fauna-One { width: 180px; height: 27px; background-position: -195px -79px; }
+.Georgia-Italic { width: 180px; height: 27px; background-position: -385px -79px; }
+.Gobold { width: 180px; height: 27px; background-position: -575px -79px; }
+.Inconsolata { width: 180px; height: 27px; background-position: -765px -79px; }
+.Inconsolata-Bold { width: 180px; height: 27px; background-position: -5px -116px; }
+.Jura-Light { width: 180px; height: 27px; background-position: -195px -116px; }
+.KefaIIPro-Light { width: 180px; height: 27px; background-position: -385px -116px; }
+.Lato { width: 180px; height: 27px; background-position: -575px -116px; }
+.Lato-Italic { width: 180px; height: 27px; background-position: -765px -116px; }
+.Limelight { width: 180px; height: 27px; background-position: -5px -153px; }
+.Lobster { width: 180px; height: 27px; background-position: -195px -153px; }
+.Magra { width: 180px; height: 27px; background-position: -385px -153px; }
+.Magra-Bold { width: 180px; height: 27px; background-position: -575px -153px; }
+.Marcellus { width: 180px; height: 27px; background-position: -765px -153px; }
+.Merriweather { width: 180px; height: 27px; background-position: -5px -190px; }
+.Merriweather-BoldItalic { width: 180px; height: 27px; background-position: -195px -190px; }
+.Merriweather-HeavyItalic { width: 180px; height: 27px; background-position: -385px -190px; }
+.Monda { width: 180px; height: 27px; background-position: -575px -190px; }
+.Monda-Bold { width: 180px; height: 27px; background-position: -765px -190px; }
+.Montserrat { width: 180px; height: 27px; background-position: -5px -227px; }
+.Montserrat-alternates { width: 180px; height: 27px; background-position: -195px -227px; }
+.Niconne { width: 180px; height: 27px; background-position: -385px -227px; }
+.Nixie-One { width: 180px; height: 27px; background-position: -575px -227px; }
+.Norican { width: 180px; height: 27px; background-position: -765px -227px; }
+.Nunito { width: 180px; height: 27px; background-position: -5px -264px; }
+.Nunito-Light { width: 180px; height: 27px; background-position: -195px -264px; }
+.OpenSans { width: 180px; height: 27px; background-position: -385px -264px; }
+.OpenSans-CondensedBold { width: 180px; height: 27px; background-position: -575px -264px; }
+.OpenSans-LightItalic { width: 180px; height: 27px; background-position: -765px -264px; }
+.OpenSans-bold { width: 180px; height: 27px; background-position: -5px -301px; }
+.Patua-One { width: 180px; height: 27px; background-position: -195px -301px; }
+.Poly { width: 180px; height: 27px; background-position: -385px -301px; }
+.Roboto-Light { width: 180px; height: 27px; background-position: -575px -301px; }
+.Roboto-Medium { width: 180px; height: 27px; background-position: -765px -301px; }
+.Roboto-Thin { width: 180px; height: 27px; background-position: -5px -338px; }
+.Rokkitt { width: 180px; height: 27px; background-position: -195px -338px; }
+.Signika { width: 180px; height: 27px; background-position: -385px -338px; }
+.Sue-Ellen-Francisco { width: 180px; height: 27px; background-position: -575px -338px; }
+.Syncopate { width: 180px; height: 27px; background-position: -765px -338px; }
+.TitilliumWeb-Bold { width: 180px; height: 27px; background-position: -5px -375px; }
+.TitilliumWeb-Light { width: 180px; height: 27px; background-position: -195px -375px; }
+.Titilliumweb { width: 180px; height: 27px; background-position: -385px -375px; }
+.Unica-One { width: 180px; height: 27px; background-position: -575px -375px; }
+.Varela { width: 180px; height: 27px; background-position: -765px -375px; }
+.Yanone-Kaffeesatz { width: 180px; height: 27px; background-position: -5px -412px; }
+.Yanone-Kaffeesatz-Bold { width: 180px; height: 27px; background-position: -195px -412px; }
+.adventPro { width: 180px; height: 27px; background-position: -385px -412px; }
+.alfaslabone { width: 180px; height: 27px; background-position: -575px -412px; }
+.almoni-dl-aaa-300 { width: 180px; height: 27px; background-position: -765px -412px; }
+.almoni-dl-aaa-400 { width: 180px; height: 27px; background-position: -5px -449px; }
+.annieuseyourtelescope { width: 180px; height: 27px; background-position: -195px -449px; }
+.archivoblack { width: 180px; height: 27px; background-position: -385px -449px; }
+.arial { width: 180px; height: 27px; background-position: -575px -449px; }
+.arimo { width: 180px; height: 27px; background-position: -765px -449px; }
+.arimo-bold { width: 180px; height: 27px; background-position: -5px -486px; }
+.arimo-bolditalic { width: 180px; height: 27px; background-position: -195px -486px; }
+.arimo-italic { width: 180px; height: 27px; background-position: -385px -486px; }
+.asap-bolditalic { width: 180px; height: 27px; background-position: -575px -486px; }
+.asap-italic { width: 180px; height: 27px; background-position: -765px -486px; }
+.bilboswashcaps { width: 180px; height: 27px; background-position: -5px -523px; }
+.bubblegumsans { width: 180px; height: 27px; background-position: -195px -523px; }
+.cabinsketch { width: 180px; height: 27px; background-position: -385px -523px; }
+.courgette { width: 180px; height: 27px; background-position: -575px -523px; }
+.creepster { width: 180px; height: 27px; background-position: -765px -523px; }
+.crushed { width: 180px; height: 27px; background-position: -5px -560px; }
+.dancingscript { width: 180px; height: 27px; background-position: -195px -560px; }
+.domine { width: 180px; height: 27px; background-position: -385px -560px; }
+.droidsans { width: 180px; height: 27px; background-position: -575px -560px; }
+.fjallaone { width: 180px; height: 27px; background-position: -765px -560px; }
+.frederickathegreat { width: 180px; height: 27px; background-position: -5px -597px; }
+.fugaz-one { width: 180px; height: 27px; background-position: -195px -597px; }
+.glassantiqua { width: 180px; height: 27px; background-position: -385px -597px; }
+.gobold-thin { width: 92px; height: 22px; background-position: -575px -597px; }
+.greatvibes { width: 180px; height: 27px; background-position: -677px -597px; }
+.hallowin-mistery { width: 180px; height: 27px; background-position: -5px -634px; }
+.imfeenrm28p { width: 180px; height: 27px; background-position: -195px -634px; }
+.josefinslab { width: 180px; height: 27px; background-position: -385px -634px; }
+.juliussansone { width: 180px; height: 27px; background-position: -575px -634px; }
+.kaushanscript { width: 180px; height: 27px; background-position: -765px -634px; }
+.librebaskerville { width: 180px; height: 27px; background-position: -5px -671px; }
+.londrinasketch { width: 180px; height: 27px; background-position: -195px -671px; }
+.nextexitfot { width: 180px; height: 27px; background-position: -385px -671px; }
+.nextexitfot-bold { width: 180px; height: 27px; background-position: -575px -671px; }
+.nextexitfot-light { width: 180px; height: 27px; background-position: -765px -671px; }
+.norwester { width: 180px; height: 27px; background-position: -5px -708px; }
+.oleoscript { width: 180px; height: 27px; background-position: -195px -708px; }
+.oleoscriptswashcaps { width: 180px; height: 27px; background-position: -385px -708px; }
+.opensans-extrabold { width: 180px; height: 27px; background-position: -575px -708px; }
+.oxygen { width: 180px; height: 27px; background-position: -765px -708px; }
+.oxygen-bold80 { width: 180px; height: 27px; background-position: -5px -745px; }
+.oxygen-light { width: 180px; height: 27px; background-position: -195px -745px; }
+.playball { width: 180px; height: 27px; background-position: -385px -745px; }
+.ptSans-narrow { width: 180px; height: 27px; background-position: -575px -745px; }
+.pt_sans-narrow-web { width: 180px; height: 27px; background-position: -765px -745px; }
+.pt_serif-web-italic { width: 180px; height: 27px; background-position: -5px -782px; }
+.ptsans { width: 180px; height: 27px; background-position: -195px -782px; }
+.ptsans-bold { width: 180px; height: 27px; background-position: -385px -782px; }
+.rajdhani-light { width: 180px; height: 27px; background-position: -575px -782px; }
+.raleway-light { width: 180px; height: 27px; background-position: -765px -782px; }
+.roboto { width: 180px; height: 27px; background-position: -5px -819px; }
+.roboto-black { width: 180px; height: 27px; background-position: -195px -819px; }
+.roboto-bold { width: 180px; height: 27px; background-position: -385px -819px; }
+.roboto-slab { width: 180px; height: 27px; background-position: -575px -819px; }
+.robotocondensed { width: 180px; height: 27px; background-position: -765px -819px; }
+.robotocondensed-bold { width: 180px; height: 27px; background-position: -5px -856px; }
+.robotocondensed-bolditalic { width: 180px; height: 27px; background-position: -195px -856px; }
+.robotocondensed-light { width: 180px; height: 27px; background-position: -385px -856px; }
+.russoone { width: 180px; height: 27px; background-position: -575px -856px; }
+.sansitaone { width: 180px; height: 27px; background-position: -765px -856px; }
+.sansitaone-fat { width: 180px; height: 27px; background-position: -5px -893px; }
+.satisfy { width: 180px; height: 27px; background-position: -195px -893px; }
+.sevillana { width: 180px; height: 27px; background-position: -385px -893px; }
+.snippet { width: 180px; height: 27px; background-position: -575px -893px; }
+.specialelite { width: 180px; height: 27px; background-position: -765px -893px; }
+.squadaone { width: 180px; height: 27px; background-position: -955px -5px; }
+.texgyretermes { width: 180px; height: 27px; background-position: -955px -42px; }
+.tulpenone { width: 180px; height: 27px; background-position: -955px -79px; }
+.varela-round { width: 180px; height: 27px; background-position: -955px -116px; }
+.voces { width: 180px; height: 27px; background-position: -955px -153px; }
+.wireone { width: 180px; height: 27px; background-position: -955px -190px; }

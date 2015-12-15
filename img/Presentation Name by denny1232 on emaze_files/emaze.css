@@ -1,0 +1,784 @@
+/* emaze customizations */
+
+@font-face { font-family: 'emaze-font'; src: local('emaze-font'), url(https://themes.googleusercontent.com/static/fonts/roboto/v9/2UX7WLTfW3W8TclTUvlFyQ.woff) format('woff'); }
+
+@font-face { font-family: 'emazec-font'; src: local('emazec-font'), url(https://themes.googleusercontent.com/static/fonts/robotocondensed/v8/Zd2E9abXLFGSr9G3YK2MsFzqCfRpIA3W6ypxnPISCPA.woff) format('woff'); }
+
+@font-face {
+  font-family: 'Asap';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Asap'), local('Asap-Regular'), url(https://fonts.gstatic.com/s/asap/v3/oiVlPAjaPL0EznW3E5Z2DQ.woff2) format('woff2'), url(https://fonts.gstatic.com/s/asap/v3/SgBaq0dzhSGNMfqm2JX5ng.woff) format('woff');
+}
+
+body { background-color: white; font-size: .85em; font-family: 'emaze-font', sans-serif, Arial, Helvetica; margin: 0; padding: 0; color: #696969; height: 100%; background-attachment: fixed;}
+
+html, .page, #main { height: 100%; }
+
+#main { height: 100%; margin-top: 28px; margin-bottom: 28px; }
+
+/*Scroll bar*/
+::-webkit-scrollbar { width: 12px;  height: 12px;}
+
+/* Track */
+::-webkit-scrollbar-track { background: rgba(213, 213, 213, 1); }
+
+/* Handle */
+::-webkit-scrollbar-thumb { background: rgba(145, 145, 145, 1); }
+
+::-webkit-scrollbar-thumb:window-inactive { background: rgba(227,230,230,1); }
+
+#topbar { direction: ltr; color: #ccc; height: 39px; position: fixed; top: 0; left: 0; width: 100%; z-index: 9999999999; background: #464646; font: normal 11.5px 'emaze-font', sans-serif, Arial, Helvetica; }
+
+#topbar-weblogo { width: 130px; height: 28px; margin-top: 7px; margin-left: 15px; background-image: url(images/emaze_logo.png); background-position: 0 0px; background-repeat: no-repeat; position: relative; float: left; cursor: pointer; }
+
+/*#topbar-weblogo:after {
+content: 'beta';
+margin-left: 85px;
+top: 2px;
+display: block;
+position: absolute;
+font-size: 13px;
+color: rgb(180, 180, 180);
+}*/
+
+@font-face {
+    font-family: 'kefa';
+    src: url('//resources.emaze.com/vbcommon/fonts/Kefa-Bold.eot?#iefix') format('embedded-opentype');
+}
+
+#topbar-login-info { /*min-width: 80px;*/ height: 13px; margin-top: 9px; position: relative; float: right; text-align: right; margin-right: 6px; font-family: kefa; color: white; font-size: 18px;}
+
+#topbar-login-icon { width: 10px; height: 20px; margin-right: 14px; margin-top: 17px; background-image: url(images/login-arrow_icon.png); background-position: 0 0px; background-repeat: no-repeat; position: relative; float: right; background-size: 100%;}
+
+#bottombar { display: none; direction: ltr; color: #ccc; font: normal 11.5px 'emaze-font', sans-serif, Arial, Helvetica; height: 28px; position: absolute; bottom: 0; left: 0; width: 100%; min-width: 600px; z-index: 99998; background: #464646; }
+
+#bottombar-links { min-width: 100px; height: 20px; margin-top: 6px; margin-left: 20px; position: relative; float: left; text-align: left; }
+
+#account-dropdown { margin: 0; padding: 0; }
+
+#account-dropdown-elements { display: none; background-color: rgba(0, 0, 0, 0.8); padding: 10px; margin-top: 7px;}
+
+#account-dropdown-username { text-align: right; min-width: 162px;}
+
+#four-browsers-img { position: absolute; top: 163px; left: 120px; }
+
+.account-dropdown-li { color: white; text-decoration: none; list-style-type: none; left: 0; text-align: left; margin-bottom: 5px; font-family: Asap;}
+.account-dropdown-li:hover { color: #f8b100; }
+
+.error-page-div { width: 500px; height: 250px; background: black; position: fixed; top: 50%; left: 50%; z-index: 15; color: white; opacity: 0.95; margin: -150px 0 0 -250px; font-family: 'emaze-font', sans-serif, Arial, Helvetica; }
+
+.error-page-header { max-width: 100%; height: 25px; color: white; display: block; font: normal 26px 'emaze-font', sans-serif, Arial, Helvetica; margin-left: 15px; margin-top: 15px; margin-right: 15px; padding-top: 5px; padding-bottom: 12px; padding-left: 5px; border-bottom: 1px white solid; }
+
+.error-page-message { max-width: 100%; height: 25px; display: block; font: normal 18px 'emaze-font', sans-serif, Arial, Helvetica; margin-left: 15px; margin-top: 15px; margin-right: 15px; padding-top: 5px; padding-bottom: 5px; padding-left: 5px; }
+
+.error-page-link { max-width: 400px; padding: 5px; background-color: #c94b50; display: block; font: normal 22px 'emaze-font', sans-serif, Arial, Helvetica; text-align: center; position: absolute; border: 0; cursor: pointer; right: 50%; bottom: 50%; color: white; text-decoration: none; margin-right: -150px; margin-bottom: -100px; }
+
+.error-page-link:hover { background-color: #954352; }
+
+.not-supported-div { background-repeat: no-repeat; background-position: 53% 84%; background-image:url(images/browsers.png); }
+
+/*.browser-not-supported-div { background-repeat: no-repeat; background-position: 53% 84%; background-image:url(images/4browsers.png); }*/
+
+.error-popup-close 
+{
+    background-image: url("images/popup-close-icon.png");
+    background-repeat:no-repeat;
+    position: absolute;
+    z-index: 100;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    cursor: pointer;
+    margin-left: 15px;  
+    margin-top: 28px;  
+    margin-right: 15px;  
+    padding-top: 5px;  
+    padding-bottom: 12px;  
+    padding-left: 5px;
+}
+
+.browser-not-supported-div .download-browser-link 
+{
+    position: absolute;
+    z-index: 100;
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    bottom: 35px;
+}
+
+.browser-not-supported-div #link-chrome { left: 134px; }
+
+.browser-not-supported-div #link-safari { left: 199px; }
+
+.browser-not-supported-div #link-firefox { left: 268px; }
+
+.browser-not-supported-div #link-ie { left: 338px; }
+
+.not-supported-div .download-browser-link 
+{
+    position: absolute;
+    z-index: 100;
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    bottom: 55px;
+}
+
+.not-supported-div #link-chrome { left: 154px; }
+
+.not-supported-div #link-safari { left: 238px; }
+
+.not-supported-div #link-firefox { left: 317px; }
+
+.not-supported-div #link-ie { left: 338px; }
+
+.iframe-popup-container 
+{ 
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -250px;
+}
+
+#analytic-iframe-container{
+    width: 1000px;
+    height: 750px;
+    margin: -355px 0 0 -500px;
+    background-color: transparent;
+    overflow: hidden;
+    position: fixed;
+}
+
+.payment-survey-iframe 
+{ 
+    position: absolute;
+    width: 230px;
+    height: 250px;
+    z-index: 9999;
+    top: 70%;
+    left: 0;
+}
+
+.iframe-popup 
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#homepage-iframe 
+{
+    width: 100%;
+    height: 100%;
+}
+
+#logo-login
+{
+    display: none;
+    height: 260px;
+    width: 912px;
+    position: absolute;
+    left: 50%;
+    margin-left: -453px;
+    top: -16px;
+}
+
+#slogan 
+{
+    background-image: url("images/logo-color.png");
+    width: 430px;
+    height: 95px;
+    position: absolute;
+    top: 42px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    left: 43px;
+    background-position: 115px;
+}
+
+#splash-text 
+{
+    display: block;
+    position: absolute;
+    color: #000; /*to prevent text from being clipped in ipad*/
+    top: 106px;
+    font-size: 40px;
+}
+
+#signup-panel 
+{
+    width: 350px;
+    height: 280px;
+    border: 0px;
+    display: block;
+    position: absolute;
+    right: 0;
+    background-color: transparent;
+}
+
+#my-account-iframe-container 
+{
+    height: 245px;
+    margin-top: -165px;
+    z-index: 9999;
+    display: none;
+}
+
+#my-account-payment-survey-iframe {
+    position: fixed;
+    top: 35%;
+    left: 7%;
+    z-index: 999999;
+    transform: scale(1);
+}
+
+
+/* repostion the my-account-payment-survey-iframe popup */
+@media only screen 
+and (min-width : 1501px) 
+and (max-width : 1650px) {
+    #my-account-payment-survey-iframe {
+        left: 5%;
+        transform: scale(1);
+    }
+}
+
+@media only screen 
+and (min-width : 1401px) 
+and (max-width : 1500px) {
+    #my-account-payment-survey-iframe {
+        left: 2%;
+        transform: scale(1);
+    }
+}
+
+@media only screen 
+and (min-width : 1301px) 
+and (max-width : 1400px) {
+    #my-account-payment-survey-iframe {
+        left: 1%;
+        transform: scale(0.8);
+    }
+}
+
+
+@media only screen
+ and (min-width : 1201px) 
+and (max-width : 1300px) {
+    #my-account-payment-survey-iframe {
+        left: -3%;
+        transform: scale(0.7);
+    }
+}
+
+
+@media only screen
+and (max-width : 1200px) {
+    #my-account-payment-survey-iframe {
+        left: -5%;
+        transform: scale(0.5);
+    }
+}
+
+/* end repostion the my-account-payment-survey-iframe popup */
+
+#payment-survey-iframe {
+    display: none;
+    border: transparent;
+}
+
+#my-account-close { 
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+#pricing-iframe-container {
+    display: none;
+    position: fixed;
+    height: 625px;
+    width: 850px;
+    margin-top: -312px;
+    z-index: 9999999999;
+    top: 50%;
+    left: 50%;
+    margin-left: -425px;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+}
+
+.no-opacity {
+    opacity: 0;
+    display: none;
+}
+
+/* ----------------laptop-------------------  */
+
+@media only screen 
+and (min-width : 1025px) 
+and (max-width : 1366px) {
+    .laptop-no-display {
+        display: none;
+    }
+}
+
+/* ----------------------------------------  */
+ 
+/* ----------------tablet-------------------  */
+
+@media only screen 
+and (min-width : 300px) 
+and (max-width : 1024px) {
+    .tablet-no-display {
+        display: none;
+    }
+}
+
+/* ----------------------------------------  */
+
+/* ----------------mobile-------------------  */
+
+@media only screen 
+and (min-width : 1px) 
+and (max-width : 300px) {
+    .mobile-no-display {
+        display: none;
+    }
+}
+
+/* ----------------------------------------  */
+
+
+#pricing-iframe-close { 
+    width: 23px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("images/pricing-close.png");
+    background-repeat: no-repeat;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+#pricing-iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#pricing-overlay { 
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 99999;
+}
+
+#topbar-help-icon 
+{
+    width: 35px;
+    height: 100%;
+    position: relative;
+    float: right;
+    cursor: pointer;
+    border-color: #747474;
+    border-width: 0 1px 0 1px;
+    border-style: solid;
+    background-image: url("images/question.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    right: 20px;
+}
+
+.dropdown-help {
+    position: absolute;
+    display: none;
+    width: 140px;
+    height: 109px;
+    top: 39px;
+    left: 0;
+    background-color: rgba(0,0,0, 0.8);
+
+}
+
+#topbar-help-icon:hover > .dropdown-help {
+    display: block;
+}
+
+.dropdown-help>div {
+    position: relative;
+    display: block;
+    color: white; 
+    text-decoration: none; 
+    list-style-type: none; 
+    left: 0; 
+    text-align: left; 
+    margin: 5px 10px 5px 10px; 
+    font-family: Asap;
+    font-size: 18px;
+}
+
+.dropdown-help>div:hover {
+    color: #f8b100;
+} 
+
+#topbar-upgrade-icon 
+{
+    /*width: 90px;
+    height: 100%;
+    position: relative;
+    float: right;*/
+    cursor: pointer;
+    background-image: url("images/upgrade-btn.png");
+    /*background-repeat: no-repeat;
+    background-position: center;
+    right:30px;*/
+}
+
+#topbar-master-icon 
+{ 
+    background-image: url("images/emazing-btn.png");
+}
+
+#topbar-pro-icon 
+{ 
+    background-image: url("images/pro-btn.png");
+}
+
+#topbar-regular-icon
+{ 
+    background-image: url("images/education-btn.png");
+}
+
+#topbar-group-icon
+{ 
+    background-image: url("images/group-team-btn.jpg");
+}
+
+#team-edit-button {
+    position: absolute;
+    background: darkred;
+    color: white;
+    font-size: 18px;
+    margin-left: 280px;
+    width: 50px;
+    top: 7px;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#password-popup-textbox 
+{
+    width: 245px;
+    height: 32px;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-right: 15px;
+    border: 0;
+    font-size: 25px;
+    font-family: 'emazec-font';
+}
+
+#password-popup-error
+{
+    border: 1px solid;
+    padding: 2px;
+    font-size: 12px ;
+    color: white;
+    background-color: #ee4c4e;
+    opacity: 0.9;
+    float: left;
+    z-index: 10;
+    position: absolute;
+    left: 30px;
+    top: 167px;
+    border-radius: 5px;
+}
+
+.topbar-plan-icon 
+{ 
+    width: 90px;
+    height: 100%;
+    position: relative;
+    float: right;
+    background-repeat: no-repeat;
+    background-position: center;
+    right:22px;
+    cursor: pointer;
+}
+/*------------------------ POPUP relevant section --------------------------------*/
+.popup-button-cancel {
+    width: 135px;
+    padding: 3px;
+    background-color: #b3b3b3;
+    display: block;
+    font: normal 22px 'emaze-font', sans-serif, Arial, Helvetica;
+    text-align: center; /* Chrome,Safari4+ */
+    position: absolute;
+    border: 0;
+    cursor: pointer;
+    left: 15px;
+    bottom: 15px;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+}
+
+.popup-button-ok {
+    width: 135px;
+    padding: 3px;
+    background-color: #fcd14c;
+    display: block;
+    font: normal 22px 'emaze-font', sans-serif, Arial, Helvetica;
+    text-align: center; /* Chrome,Safari4+ */
+    position: absolute;
+    border: 0;
+    cursor: pointer;
+    right: 15px;
+    bottom: 15px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+    .popup-button-ok:hover, .popup-button-cancel:hover {
+        background-color: #f39348;
+    }
+
+       .popup-button-ok:hover, .popup-button-cancel:hover {
+        background-color: #f39348;
+    }
+
+
+
+    /*------------------------ /POPUP relevant section --------------------------------*/
+#login-iframe
+{
+    width: 288px;
+    height: 512px;
+    position: absolute;
+    top: -133px;
+    right: 0;
+    margin-right: 50px;
+    overflow: hidden;
+    border: 0;
+}
+
+#login-wrapper 
+{
+    width: 900px;
+    height: 260px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -450px;
+}
+
+#login-header 
+{
+    font-size: 70px;
+}
+
+#login-text 
+{
+    font-size: 40px;
+}
+
+.login-message 
+{ 
+    width: 450px;
+    color: #595959;
+    font-family: 'emazec-font';
+    display: block;
+}
+
+#thankyou-div 
+{ 
+    position: absolute;
+    width: 700px;
+    height: 432px;
+    top: 50%;
+    left: 50%;
+    margin: -216px 0 0 -322px;
+}
+
+#thankyou-logo 
+{ 
+    display: block;
+    margin-left: 220px;
+}
+
+#thankyou-header1 
+{ 
+    text-align: center;
+    margin-top: 35px;
+}
+
+#thankyou-header2
+{ 
+    margin-top: 20px;
+    margin-left: 87px;
+    line-height: 1;
+}
+
+#thankyou-text 
+{ 
+    display: block;
+    font-size: 24px;
+    font-family: 'emaze-font', sans-serif, Arial, Helvetica;
+    color: black;
+    margin-top: 28px;
+    text-align: center;
+}
+
+#thankyou-btn 
+{ 
+    display: block;
+    width: 274px;
+    height: 65px;
+    background-color: #fbd24c;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'emazec-font', sans-serif, Arial, Helvetica;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 200px;
+    cursor: pointer;
+}
+
+.thankyou-plan 
+{ 
+    position: absolute;
+    margin-left: 10px;
+}
+
+.thankyou-header 
+{ 
+    display: block;
+    font-size: 55px;
+    font-weight: bold;
+    font-family: 'emazec-font', sans-serif, Arial, Helvetica;
+    color: black;
+    text-transform: uppercase;
+}
+
+#newshare-iframe-container { 
+    width: 730px;
+    height: 466px;
+    margin: -255px 0 0 -365px;
+    position: fixed;
+    z-index: 99999;
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+ #device-portrait-blocker {
+     display: block !important;           
+
+  }
+
+}
+#device-portrait-blocker {
+    display: none;
+    position: fixed;
+    z-index: 1000000000;    
+    top: 0;    
+    bottom: 0;
+   color: #4C4C4C;
+    background: white;
+    font-family: Arial;
+    font-size: 25px;
+    padding: 50%;
+}
+
+#contact-us-iframe-overlay{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 200%;
+  width: 200%;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 9999999999;
+}
+#contact-us-iframe, #contact-us-iframe-container {
+    display: none;
+}
+#contact-us-iframe-new, #contact-us-iframe-container-new{
+  position: absolute;
+  z-index: 10;
+  height: 460px;
+  width: 565px;
+  display: block;
+    border: transparent;
+}
+#contact-us-iframe-container-new {
+      top: 16%;
+  left: 23%;
+}
+#contact-us-iframe-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 6px 7px;
+  background-image: url(//resources.emaze.com/vbcommon/images/close-dialog.png);
+  background-repeat: no-repeat;
+  height: 26px;
+  width: 26px;
+  cursor: pointer;
+  z-index: 20;
+}
+
+@media screen and (max-height: 800px) {
+    #analytic-iframe-container{
+        width: 800px;
+        height: 600px;
+        margin: -280px 0 0 -400px;
+    }
+}
+
+@media screen and (max-height: 640px) {
+    #analytic-iframe-container{
+        width: 640px;
+        height: 480px;
+        margin: -220px 0 0 -320px;
+    }
+}
+
+@media only screen and (min-width : 300px) and (max-width : 1024px) {
+    #contact-us-iframe, #contact-us-iframe-container{
+          left: 13%;
+          top: 11%;
+        }
+}
+
+
+/*
+ * Mixpanel notifications fix
+ * Making sure notifications are visible
+ */
+#mixpanel-notification-wrapper{
+  z-index: 9999999999999999;
+  position: absolute;
+}
